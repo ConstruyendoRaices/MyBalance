@@ -6,6 +6,10 @@ const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
  *
  * @type {import('@react-native/metro-config').MetroConfig}
  */
-const config = {};
+const config = {
+    server: {
+      port: 8088, // Cambia el puerto a 8088 o al que prefieras
+    },
+};
 
 module.exports = mergeConfig(getDefaultConfig(__dirname), config);
