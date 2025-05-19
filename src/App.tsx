@@ -1,6 +1,13 @@
-import StackNavigator from './navigation/StackNavigator';
+import 'react-native-reanimated'; // Siempre primero
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import DrawerNavigator from './navigation/DrawerNavigator';
 
 export default function App() {
-  return <StackNavigator />;
+  return (
+    <NavigationContainer>
+      <DrawerNavigator />
+    </NavigationContainer>
+  );
 }
 
